@@ -1,0 +1,110 @@
+*{
+    font-family: Arial, Verdana;
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("img/main.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+img {
+    max-width: 250px;
+    border: 5px solid rgba(255, 255, 255, 0.56);
+    cursor: pointer;
+    margin: 20px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+h1,p {
+    text-shadow: 1px 1px 2px #01acba, 0 0 25px #ffffff, 0 0 5px #001983;
+    opacity: 0.7;
+}
+
+h1 {
+    font-size: 72px;
+    opacity: 0.8;
+}
+
+p {
+    font-size:20px;
+}
+
+ul {
+    list-style-type: none; /* Removes bullets */
+    margin: 0px;
+    padding: 0px;
+    text-align: right; /*Aligns navbar elements to the right*/
+}
+
+li {
+    display: inline; /* Keeps navbar elements in the same line */
+}
+
+li a {
+    display: inline-block; /*Makes navbar elements a block so that it looks tidier */
+    color: white;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none; /* Removes the default underline */
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #00ebff, 0 0 25px #ffffff, 0 0 5px #e200ff;
+}
+
+li a:hover {
+    color: #e0e0e0;
+    text-shadow: 2px 2px 3px #34efff, 0 0 25px #ffffff, 0 0 15px #ffffff;
+}
+
+.home {
+    float: left;
+}
+
+#description, h3 {
+    margin: 40px;
+}
+
+h3 {
+    padding-bottom: 20px;
+}
+
+div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.buttoncontainer {
+    position: relative;
+    height: 240px;
+    border: none;
+    display: grid;
+}
+
+
+#random{
+    background-color: transparent;
+    border: 2px solid #ffffff;;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-weight:bold;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#random:hover{
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+

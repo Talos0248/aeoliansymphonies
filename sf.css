@@ -1,0 +1,140 @@
+*{
+    font-family: Arial, Verdana;
+    color:white;
+}
+
+h1,p {
+    text-shadow: 1px 1px 2px #01acba, 0 0 25px #ffffff, 0 0 5px #001983; /* Glow Effects */
+    opacity: 0.8;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center; 
+}
+
+p {
+    font-size:20px;
+}
+
+ul {
+    list-style-type: none; /* Removes bullets */
+    margin: 0px;
+    padding: 0px;
+    text-align: right; /*Aligns navbar elements to the right*/ 
+}
+
+li {
+    display: inline; /* Keeps navbar elements in the same line */
+}
+
+li a {
+    display: inline-block; /*Makes navbar elements a block so that it looks tidier */
+    color: white;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none; /* Removes the default underline */
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #00ebff, 0 0 25px #ffffff, 0 0 5px #e200ff;
+}
+
+li a:hover {
+    color: #e0e0e0;
+    text-shadow: 2px 2px 3px #34efff, 0 0 25px #ffffff, 0 0 15px #ffffff;
+}
+
+.home {
+    float: left; /* Makes the home button float to the top left corner of the page */
+}
+
+#description {
+    text-align:center;
+    margin: 10px;
+}
+
+body {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) ), url('img/sf.jpg'); /* Sets background image and darkens it */
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* .buttonplay and .buttonpause create the shape of play and pause buttons through the use of css borders */
+
+.buttonplay, .buttonpause {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 74px;
+
+    border-color: transparent transparent transparent #ffffff;
+    transition: 100ms all ease;
+    cursor: pointer;
+    
+}
+
+.buttonplay {
+    border-style: solid;
+    border-width: 37px 0 37px 60px;
+}
+
+.buttonplay:hover, .buttonpause:hover {
+    border-color: transparent transparent transparent #d1d1d1;
+}
+
+.buttonpause {
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+}
+
+.buttoncontainer {
+    position: relative;
+    height: 240px;
+    border: none;
+    display: grid;
+}
+
+
+/* Container for sliders and description */
+
+.slidecontainer {
+    position: relative;
+    height: 160px;
+    width: 240px;
+    display: inline-block;
+
+}
+
+.slider {
+    opacity: 75%;  
+}
+
+/* Customizes the randomize button */
+
+#random{
+    background-color: transparent;
+    border: 2px solid #ffffff;;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-weight:bold;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+#random:hover{
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+

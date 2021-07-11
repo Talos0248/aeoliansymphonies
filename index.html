@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- This is the Home Page for the Web Application -->
+<html>
+    <head>
+        <title>Aeolian Symphonies</title>
+        <link rel="stylesheet" href="layout.css">
+    </head>
+  
+    <body>
+        
+        <script src="script.js"></script>
+        
+        <!-- Navigation Bar -->
+        
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><a href="sf.html">Seafarer</a></li>
+            <li><a href="cn.html">CyberNoir</a></li>
+            <li><a href="aw.html">Autumn Wind</a></li>
+        </ul>
+        
+        <!-- Header and Description -->
+
+        <h1>Aeolian Symphonies</h1>
+        <h2 id="description">A new way to experience music.</h2>
+        
+        <!-- Button which takes users to a random page -->
+        
+        <div>
+            <button id="random" onclick="randompage()">Take me to a random song!</button>
+        </div>
+        
+        <p>or</p>
+        
+        <h3>Select one of the songs below!</h3>
+        
+        <!-- Cover art which links to the respective songs -->
+        
+        <div>
+            <a href="sf.html"><img src="img/tsf.jpg" alt="Seafarer"></a>
+            <a href="cn.html"><img src="img/tcn.jpg" alt="CyberNoir"></a>
+            <a href="aw.html"><img src="img/taw.jpg" alt="Autumn Wind"></a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CyberNoir</title>
+        <link rel="stylesheet" href="cn.css">
+    </head>
+  
+    <body>
+        
+        <script src="music.js"></script>
+        
+        <!-- Navigation Bar -->
+        
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><a href="sf.html">Seafarer</a></li>
+            <li><a href="cn.html">CyberNoir</a></li>
+            <li><a href="aw.html">Autumn Wind</a></li>
+        </ul>
+
+        <!-- Header and Description -->
+
+        <h1><span class="cyber">CYBER</span><span class="noir">Noir</span></h1>
+        <p id="description">Venture through a sci-fi, dystopian cityscape with quick beats, synth, synth, and more synth.</p>
+
+        <!-- Play/Pause Buttons -->
+        
+        <div class="buttoncontainer">
+            <input type="button" id="playpause" class="buttonplay" onclick="play()">
+        </div>
+        
+        <!-- Sliders and Labels for Instrumental Tracks -->
+        <!-- Sliders are set to have a min of 0 and a max of 1 and each step increases or decreases the value by 0.01 -->
+        
+        <div>
+            <div class="slidecontainer">
+                <p>Synth 1</p>
+                <input type="range" min="0" max="1" value="1" step="0.01" class="slider" id="strack1" onchange='volume("track1","strack1")'>
+            </div>
+
+            <div class="slidecontainer">
+                <p>Synth 2</p>
+                <input type="range" min="0" max="1" value="1" step="0.01" class="slider" id="strack2" onchange='volume("track2","strack2")'>
+            </div>
+
+            <div class="slidecontainer">
+                <p>Synth 3</p>
+                <input type="range" min="0" max="1" value="1" step="0.01" class="slider" id="strack3" onchange='volume("track3","strack3")'>
+            </div>
+
+            <div class="slidecontainer">
+                <p>Synth 4</p>
+                <input type="range" min="0" max="1" value="1" step="0.01" class="slider" id="strack4" onchange='volume("track4","strack4")'>
+            </div>
+
+            <div class="slidecontainer">
+                <p>Synth 5</p>
+                <input type="range" min="0" max="1" value="1" step="0.01" class="slider" id="strack5" onchange='volume("track5","strack5")'>
+            </div>
+
+            <div class="slidecontainer">
+                <p>Percussion</p>
+                <input type="range" min="0" max="1" value="1" step="0.01" class="slider" id="strack6" onchange='volume("track6","strack6")'>
+            </div>
+        </div>
+        
+        <!-- The Randomize Button -->
+        
+        <div>
+            <button id="random" onclick="randomize()">Randomize!</button>
+        </div>
+        
+        <!-- Audio Files which prioritize .ogg from .mp3, set to loop -->
+        
+        <audio loop id="track1">
+            <source src="audio/cn/cn_Insert%201.ogg" type="audio/ogg" />
+            <source src="audio/cn/cn_Insert%201.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+        
+        <audio loop id="track2">
+            <source src="audio/cn/cn_Insert%202.ogg" type="audio/ogg" />
+            <source src="audio/cn/cn_Insert%202.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+        
+        <audio loop id="track3">
+            <source src="audio/cn/cn_Insert%203.ogg" type="audio/ogg" />
+            <source src="audio/cn/cn_Insert%203.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+        
+        <audio loop id="track4">
+            <source src="audio/cn/cn_Insert%204.ogg" type="audio/ogg" />
+            <source src="audio/cn/cn_Insert%204.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+        
+        <audio loop id="track5">
+            <source src="audio/cn/cn_Insert%205.ogg" type="audio/ogg" />
+            <source src="audio/cn/cn_Insert%205.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+        
+        <audio loop id="track6">
+            <source src="audio/cn/cn_Insert%206.ogg" type="audio/ogg" />
+            <source src="audio/cn/cn_Insert%206.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+        </audio>
+
+
+
+    </body>
+</html>
