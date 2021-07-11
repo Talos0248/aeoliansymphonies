@@ -1,4 +1,4 @@
-# aeoliansymphonies
+# Aeolian Symphonies
 A demo webapp for playing multiple tracks of the same song!
 
 For the live website, check out:
